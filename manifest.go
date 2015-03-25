@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/jingweno/nut/internal/_nuts/github.com/BurntSushi/toml"
+	"github.com/dim/nut/internal/_nuts/github.com/BurntSushi/toml"
 )
 
 type Manifest struct {

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jingweno/nut/internal/_nuts/github.com/codegangsta/cli"
+	"github.com/dim/nut/internal/_nuts/github.com/codegangsta/cli"
 )
 
 var boolFlagTests = []struct {

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jingweno/nut/internal/_nuts/github.com/codegangsta/cli"
+	"github.com/dim/nut/internal/_nuts/github.com/codegangsta/cli"
 )
 
 func TestNewContext(t *testing.T) {

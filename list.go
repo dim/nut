@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/jingweno/nut/internal/_nuts/github.com/codegangsta/cli"
-	"github.com/jingweno/nut/internal/_nuts/golang.org/x/tools/go/vcs"
+	"github.com/dim/nut/internal/_nuts/github.com/codegangsta/cli"
+	"github.com/dim/nut/internal/_nuts/golang.org/x/tools/go/vcs"
 )
 
 var listCmd = cli.Command{
