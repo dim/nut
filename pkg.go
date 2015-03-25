@@ -109,11 +109,11 @@ func (pl *PkgLoader) getDepPkgs(ps []*pkg) ([]*pkg, error) {
 	s := newSet()
 	for _, p := range ps {
 		// for its test dependencies
-		imports := append(p.TestImports, p.XTestImports...)
+		// imports := append(p.TestImports, p.XTestImports...)
 		// for its dependencies
-		imports = append(imports, p.Deps...)
+		// imports = append(imports, p.Deps...)
 
-		for _, i := range imports {
+		for _, i := range p.Deps {
 			s.Add(i)
 		}
 	}
