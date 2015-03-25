@@ -39,7 +39,7 @@ func main() {
 	}
 
 	i, _ := strconv.Unquote(ff.Imports[0].Path.Value)
-	if i != "github.com/gophergala/nut/vendor/_nuts/github.com/octokit/go-octokit" {
+	if i != "github.com/gophergala/nut/internal/_nuts/github.com/octokit/go-octokit" {
 		t.Fatalf("import is wrong: %s", i)
 	}
 }

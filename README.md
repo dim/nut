@@ -87,12 +87,12 @@ An empty `COMMIT-ISH` means the latest version of the dependency.
 
 ## Downloading dependencies
 
-Run `nut install` to download dependencies. `nut` puts dependencies to `vendor/_nuts/`.
+Run `nut install` to download dependencies. `nut` puts dependencies to `internal/_nuts/`.
 Let's take a look this folder:
 
 ```
-$ tree vendor
-vendor
+$ tree internal
+internal
 └── _nuts
     └── github.com
         ├── fhs
@@ -105,9 +105,9 @@ vendor
 20 directories, 98 files
 ```
 
-The import paths of all dependencies are rewritten to be relative to `vendor/_nuts`.
+The import paths of all dependencies are rewritten to be relative to `internal/_nuts`.
 For example, assuming `github.com/octokit/go-octokit` depends on `github.com/sawyer/go-sawyer`,
-all the import paths of `go-octokit` to `go-sawyer` will be relative to `vendor/_nuts` since they're vendored.
+all the import paths of `go-octokit` to `go-sawyer` will be relative to `internal/_nuts` since they're vendored.
 
 ## Importing a dependency
 
@@ -117,7 +117,7 @@ To import to a dependency, refer to it by its full import path:
 package main
 
 import (
-  github.com/jingweno/hello_world/vendor/_nuts/github.com/octokit/go-octokit/octokit
+  github.com/jingweno/hello_world/internal/_nuts/github.com/octokit/go-octokit/octokit
 )
 
 func main() {
@@ -128,7 +128,7 @@ func main() {
 
 ## Building
 
-All dependencies are properly vendored to `vendor/_nuts` and your program is referring to import paths relative to this folder.
+All dependencies are properly vendored to `internal/_nuts` and your program is referring to import paths relative to this folder.
 `go build` and `go test` should just work.
 
 ## Demo

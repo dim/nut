@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/jingweno/nut/vendor/_nuts/github.com/codegangsta/cli"
+	"github.com/jingweno/nut/internal/_nuts/github.com/codegangsta/cli"
 )
 
 var installCmd = cli.Command{
